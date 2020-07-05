@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  margin: 1em;
+}
+
+#ball01,
+#ball02,
+#ball03 {
+  animation: ball_1 2s infinite linear;
+
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes ball_1 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
